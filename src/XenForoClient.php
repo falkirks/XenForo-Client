@@ -26,7 +26,7 @@ class XenForoClient {
     	return false;
     }
   }
-  private function connect($url, $post) {
+  public function connect($url, $post) {
     global $http_response_header;
     if ($post != null) {
       $opts = ['http' =>
